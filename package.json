@@ -1,0 +1,33 @@
+{
+    "name": "spa",
+    "version": "1.0.0",
+    "description": "The Second Producer for Animation-texture.",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs/",
+        "test": "src/tests/"
+    },
+    "dependencies": {
+        "npm": "^6.0.1",
+        "typescript": "^2.8.3"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.3.1",
+        "browserify": "^16.2.0",
+        "ts-node": "^6.0.3"
+    },
+    "scripts": {
+        "build": "tsc && browserify ./dist/index.js > ./docs/bundle.js",
+        "test": "mocha --require espower-typescript/guess \"src/tests/**/*.ts\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SPGoding/spa.git"
+    },
+    "author": "SPGoding",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SPGoding/spa/issues"
+    },
+    "homepage": "https://spgoding.github.io/spa"
+}
